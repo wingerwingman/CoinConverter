@@ -69,7 +69,7 @@ export default ({ navigation }) => {
               <Entypo name="cog" size={32} color={colors.white} />
             </TouchableOpacity>
           </SafeAreaView>
-          
+
           <View style={styles.content}>
             <View style={styles.logoContainer}>
               <Image 
@@ -89,14 +89,14 @@ export default ({ navigation }) => {
             <ConversionInput
               text={baseCurrency}
               value="123"
-              onButtonPress={() => alert("todo!")}
+              onButtonPress={() => navigation.push("CurrencyList")}
               onChangeText={text => console.log("text", text)}
               KeyboardType="numeric"
             />
             <ConversionInput
               text={quoteCurrency}
               value="123"
-              onButtonPress={() => alert("todo!")}
+              onButtonPress={() => navigation.push("CurrencyList")}
               editable={false}
             />
 
